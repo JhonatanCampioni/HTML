@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculadora">
+        <input type="text" id="display" readonly>
+        <br>
+        <input type="button" value="C" id="but-c" onclick="limpar()">
+        <br>
+        <input type="button" value="7" class="but" onclick="add_display('7')">
+        <input type="button" value="8" class="but" onclick="add_display('8')">
+        <input type="button" value="9" class="but" onclick="add_display('9')">
+        <input type="button" value="÷" class="but" onclick="add_display('/')">
+        <br>
+        <input type="button" value="4" class="but" onclick="add_display('4')">
+        <input type="button" value="5" class="but" onclick="add_display('5')">
+        <input type="button" value="6" class="but" onclick="add_display('6')">
+        <input type="button" value="x" class="but" onclick="add_display('*')">
+        <br>
+        <input type="button" value="1" class="but" onclick="add_display('1')">
+        <input type="button" value="2" class="but" onclick="add_display('2')">
+        <input type="button" value="3" class="but" onclick="add_display('3')">
+        <input type="button" value="-" class="but" onclick="add_display('-')">
+        <br>
+        <input type="button" value="." class="but" onclick="add_display('.')">
+        <input type="button" value="0" class="but" onclick="add_display('0')">
+        <input type="button" value="=" class="but" onclick="calcular()">
+        <input type="button" value="+" class="but" onclick="add_display('+')">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
